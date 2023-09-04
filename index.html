@@ -1,97 +1,183 @@
-<!DOCTYPE html> 
-<!--le indica al navegador que es html5-->
+<!DOCTYPE html>
+<!-- Indica al navegador que es HTML5 -->
 <html lang="es">
-    <!--todo documento tiene una etiqueta html y es la madre de todas las etiquetas-->
- <head>
+<head>
     <meta charset="UTF-8">
-    <!--aporta meta informacion del documento-->
+    <!-- Aporta metainformación del documento -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+<title>Pagina</title>
+</head>
+<body>
+   
+   <nav>
+    <ul>
+      <li><a href="index.html">Introduccion a Html</a> </li>
 
-    <title>Pagina</title>
-    </head>
- <!-- emet es un plugin que proporciona atajos para programar-->
-   <body>
+      <li><a href="estructura.html"> Estructura de un documento Html</a> </li>
 
-   <h1>Encabezado Principal </h1>
-   <!--Encabezado de la pagina y letra h1 hasta h6-->
-   <h2>Encabezado2</h2>
-   <h3>Encabezado3</h3>
-   <h4>Encabezado4</h4>
-   <h5>Encabezado5</h5>
+      <li><a href="introcss.html">Estructura a CSS</a> </li>
+
+      
+      <li><a href="introdom.html">ntroduccion al Dom</a></li>
+
+      <li><a href="introjs.html"> Introduccion a JS</a></li>
+
+    </ul>
+   </nav>
+
+    <h1>Encabezado Principal</h1>
+    <!-- Encabezado de la página y letra h1 hasta h6 -->
+    <h2>Encabezado2</h2>
+    <h3>Encabezado3</h3>
+    
+    
+    <h4>Encabezado4</h4>
+    <h5>Encabezado5</h5>
+    
+    
    <h6>Encabezado6</h6>
-   <!-- crl + alt + flecha "multiplicar cursor"-->
-   <hr/> <!--cambio de tema entre parrafos-->
+
+   <hr/> <!-- Cambio de tema entre párrafos -->
+
+    
+
     <h2>Otro tema</h2>
 
     <h3>Parrafos</h3>
-    <p><span style="color:blue">selecionar parte del texto</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi temporibus, maxime, esse iure suscipit, laboriosam ut velit quasi obcaecati sapiente dignissimos. Harum illo, porro magnam alias ullam ipsum quibusdam.</Label></p>
+    <p><span style="color:blue">Seleccionar parte del texto</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi temporibus, maxime, esse iure suscipit, laboriosam ut velit quasi obcaecati sapiente dignissimos. Harum illo, porro magnam alias ullam ipsum quibusdam.</p>
 
-    <br> nuevo texto</br>
-    <hr> 
-    <h2> link </h2>
     
-    <h3>ancla</h3>
-    <a href ="http:www.google.com">google</a> 
-    <br>
-    <a target="_blank" href="http:www.google.com">google ventana aparte</a>
-    </br>
+
+   
+   <br> Nuevo texto</br>
+    <hr>
+
+    
+
+   
+   <h2>Link</h2>
+    
+    
+    
+    
+    <h3>Ancla</h3>
+    <a href="http://www.google.com">Google</a> 
+    
+   
+   <br>
+    
+   
+   <a target="_blank" href="http://www.google.com">Google ventana aparte</a>
+    
+    </br
+   </br>
 
     <hr>
-    <h2>Formulario</h2>
+    
+   
+   <h2>Formulario</h2>
     <form action="/form" method="get">
-    <label for="nombre">nombre<label><br />
-    <input
-     type="text" id="nombre" name="nombre" placeholder="indica tu nombre">
+        <label for="nombre">Nombre</label><br />
+        
+       
+   <input type="text" id="nombre" name="nombre" placeholder="Indica tu nombre">
 
-    <br><br>
-    <label for="Edad">Edad</label><br />
-    <input type="number" id="Edad" name="edad" placeholder="indica tu edad">
+        <br><br>
 
-    <br><br/>
-    <label for="email">E-mail</label> <br />
-    <input
-    type="=password"
-    id="password"
-    name="password"
-    placeholder="password"
-    <br />
+        <label for="edad">Edad</label><br />
+        <input type="number" id="edad" name="edad" placeholder="Indica tu edad">
 
-    <br></br>
-    <label for="texto">Texto</label>
-    <br />
-    <textarea
-    name="texto"
-    id="texto"
-    cols="30"
-    rows="10"
-    placeholder="ingresa tu comentario"
-    ></textarea>
-    <br />
+        <br><br>
 
-    <input type="submit" value="guardar" />
+        <label for="email">E-mail</label><br />
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+
+        <br><br>
+
+        
+
+   <label for="texto">Texto</label><br />
+        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingresa tu comentario"></textarea>
+        <br />
+        <input type="submit" value="Guardar">
     </form>
 
     <hr>
-    <h2>Imagen</h2>
-    <img src="public/colo-colo.jpeg" alt="colo colo"/>
+    
+   
+   <h2>Imagen</h2>
+    <img src="public/colo-colo.jpeg" alt="Colo Colo">
 
     <hr>
 
-    <h2></h2>
+    <h2>Listados</h2>
 
-    
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        
+        
+   <li>Elemento 3</li>
+        
+        
+   <li>Elemento 4</li>
+    </ul>
 
+    <ol>
+        <li>Elemento A</li>
+        
+       
+   <li>Elemento B</li>
+        <li>Elemento C</li>
+        <li>
+            
+            
+   <ul>
+                <li style="list-style: lower-roman">Subítema 1</li>
+                <li>Subítema 2</li>
+                <li>Subítema 3</li>
+                <li>Subítema 4</li>
+            </ul>
+        </li>
+    </ol>
 
+    <hr>
+    <h2>Tabla</h2>
+    <table style="border: solid 1px black;">
+        <thead>
+            <tr>
+                <th style="border: solid 1px black;">Implante</th>
+                <th style="border: solid 1px black;">Precio</th>
+            
+            </tr
+   </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                
+<td style="border: solid 1px black;">Ojo láser</td>
+                <td style="border: solid 1px black;">500000</td>
+            </tr>
+            
+           
+<tr>
+                <td style="border: solid 1px black;">Mano robótica</td>
+                <td style="border: solid 1px black;">830000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            
+            
+<tr>
+                <td style="border: solid 1px black;">Total</td>
+                <td style="border: solid 1px black;">Efectivo</td>
+            </tr>
+        </tfoot>
+    </table>
 
-
-
-
-
-
-
-
-
-   </body>
-
-
-</html> 
+    <br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* selector global */
+* {
+  box-sizing: content-box;
+}
+
+body {
+  background-color: goldenrod;
+}
+header {
+  background-color: orangered;
+  color: blue;
+}
+
+.content-content-box > div {
+  background-color: green;
+  width: 300px;
+  margin: 30px;
+  border: 10px solid black;
+}
+
+#article-1 {
+  background-color: goldenrod;
+}
+
+#article-2 {
+  background-color: gold;
+}
+
+#article-3 {
+  background-color: goldenrod;
+}
+#myp {
+  color: blue;
+}
+
+.myp {
+  font-size: 24px;
+}
+
+.back {
+  background-color: brown;
+}
+
+.color-rojo {
+  color: red;
+  background-color: blue;
+}
+
+/* modelo de caja */
+
+.contenedor {
+  margin: 50px;
+  background-color: violet;
+  padding: 3px;
+  border: 5px solid red;
+  color: green;
+}
+
+.contenido {
+  background-color: aquamarine;
+}
+
+.contenedor-con-imagen {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: black;
+  background-image: url("/public/colo-colo.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.contenido-con-imagen {
+  background-color: gold;
+}
+
+/*selector por elemento*/
+
+span {
+  font-weight: bold;
+}
+
+/*asigna los mismo estilos a elementos con nombre diferente, esta regla afecta a todos los 
+elementos con p y span */
+p,
+span {
+  color: blueviolet;
+}
+
+/* afecta solo a los elementos <p> que se encuentra dentro de la etiqueta <main>, ya sea contenido 
+directo o indirecto */
+main p {
+  background-color: aquamarine;
+}
+
+/* elemento directo hijo  referencia a .contenedor.parrafo (padre)*/
+
+article > .contenedor-parrafo > p {
+  font-size: 25px;
+}
+
+/* este selector hace referencia a elementos que estan procedido por otros
+elementos; ambos deben estar al mismo nivel */
+
+h1 + p {
+  color: red;
+}
+
+/* estilos mas usados */
+
+/* declara el tipo de letra que se usa para mostrar en un texto. se pueden declarar
+multiples valores separados por coma para ofrecer al navegador varias alternativas en vase de que alguna
+no se encuentre disponible */
+
+.container {
+  border-top: 1px solid black;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container > .content > p {
+  background-color: white;
+  color: black;
+  font-size: 20px; /* determina el tamaño de la fuente; puede estar incluido en pixeles
+  (px) puntos (pt), %, rem, */
+
+  font-weight: 100; /* bold (100 - 1000)*/
+
+  font-style: oblique; /* estilo de letra  (normal, italic,oblique)*/
+}
+
+.content > h3 {
+  font: bold 30px Arial, sans-serif; /* permite declarar varios atributos al mismo tiempo,
+  separados por espacio . 1 grosor, 2 tamaño, 3 familia de fuente */
+
+  text-align: center; /* valores left,right,center,justify*/
+  line-height: 5px; /* define el espacio entre lineas*/
+}
+
+/* colores */
+
+.mydiv {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(255, 380, 100);
+}
+
+.div-in-mydiv {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.div-in-mydiv-2 {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #ff0000; /* 0 - 9  y A F */
+}
+
+/* tamaños*/
+
+.div-in-mydiv-3 {
+  height: 50px;
+  width: 50px;
+  margin: 20px 0;
+  border: 1px solid black;
+  background-color: #00ff00; /* 0 -9 y a f */
+}
+
+.tamano {
+  margin: 100px 20px;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+
+.tamano-hijo {
+  height: 25%;
+  width: 25%;
+  background-color: red;
+}
+
+.div-vh-vw {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+}
