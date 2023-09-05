@@ -185,6 +185,167 @@ no se encuentre disponible */
 
 .div-vh-vw {
   height: 100vh;
-  width: 100vw;
+  width: calc(100vw - 40px);
   background-color: blue;
+}
+
+.punto {
+  height: 100pt;
+  width: 100pt;
+  background-color: red;
+}
+
+.div-rem {
+  height: 20rem;
+  width: 20rem;
+  background-color: green;
+}
+
+.div-em {
+  height: 10em;
+  width: 10em;
+  background-color: blue;
+}
+
+.contenedor {
+  background-color: red;
+  width: 500px;
+  height: 500px;
+}
+
+.contenido {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
+  max-width: 200px;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+._otrocontenido {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+}
+
+.contenido-grande {
+  width: 400px;
+  height: 400px;
+  background-color: chocolate;
+}
+
+.contenedor-de-bordes > div {
+  height: 100px;
+  width: 100px;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: #00ff00;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.borde-1 {
+  border-style: dashed !important;
+}
+.borde-2 {
+  border-style: double !important;
+}
+.borde-3 {
+  border-style: outset !important;
+}
+.borde-4 {
+  border-style: solid !important;
+}
+.borde-en-una-linea {
+  border: 1px solid red;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+.flex-container {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flex-container > div {
+  margin: 10px;
+  background-color: #007fff;
+  padding: 20px;
+}
+
+/*  flex container :afectara no solo a si mismo, afectara a lo que contiene    */
+
+/* 1- flex-direction: define en que direccion se distribuiran los elemento dentro del contenedor  */
+/* contenedor 
+-column
+-column-reverse
+-row
+-row-reverse
+*/
+
+/* 2-flex-wrap: define si los elementos dentro del contenedor puedan salta a la siguiente fila o columna. */
+
+/* fila o columna
+
+- wrap
+- nowrap
+
+*/
+
+/* 3 - flex-flow: es una combinacion de las propiedades flex directon y flex-wrap  /*
+
+
+/* 4- justify-conetnt : para alinear el contenido
+
+-star
+
+-center
+
+-end  
+
+flex-start | flex-end | center | space-between | space-around
+
+
+*/
+
+/* align- items : se usa para alinear en vertical los elementos dentro del contenedor
+
+-center
+- start
+-end
+-stretch
+-baseline
+
+/*
+
+/* align-content para alinear las filas::after
+
+-space-between
+-space-arround
+-strech
+-center
+-flex-start
+-flex-end
+*/
+
+.contenedor-perfecto {
+  display: flex;
+  background-color: #00ff00;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-perfecto {
+  display: flex;
+  background-color: black !important;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
 }
