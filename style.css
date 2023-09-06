@@ -266,13 +266,14 @@ no se encuentre disponible */
 }
 
 .flex-container {
+  display: flex;
   font-size: 20px;
   border: 1px solid black;
   padding: 10px;
 }
 
 .flex-container > div {
-  margin: 10px;
+  display: flex;
   background-color: #007fff;
   padding: 20px;
 }
@@ -348,4 +349,167 @@ flex-start | flex-end | center | space-between | space-around
   width: 100px;
   align-items: center;
   justify-content: center;
+}
+
+/* selector hijo */
+
+/* comportamiento de elemento hijo dentro de contenedores flex:
+
+order: especifica el roden de los elementos
+flex-grow: determina cuanto crece el elemento relativo al resto de elementos que estan dentro
+del contenedor flex.
+
+*/
+
+.flex-container-2 > div:nth-child(1) {
+  /*order: 3;*/
+  flex-grow: 1;
+  background-color: #ff0000;
+}
+.flex-container-2 > div:nth-child(2) {
+  /*order: 1;*/
+  flex-grow: 1;
+  background-color: #007fff;
+}
+.flex-container-2 > div:nth-child(3) {
+  /*order: 2;*/
+  flex-grow: 1;
+  background-color: aqua;
+}
+
+/* flex - shrink */
+
+/* determina cuanto se puede encoger un elemento en relacion a los demas dentro
+de un contenedor flex */
+
+.flex-container-3 {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 30px;
+
+  border: 1px solid black;
+
+  padding: 10px;
+}
+
+.flex-container-3 > div {
+  margin: 10px;
+
+  background-color: #ff0000;
+
+  color: #fff;
+
+  padding: 20px;
+
+  width: 100px;
+
+  text-align: center;
+
+  line-height: 70px;
+}
+
+.flex-container-3 > div:nth-child(2) {
+  flex-shrink: 0;
+}
+
+/* flex-basis:
+determina una longitud especifica 
+*/
+
+.flex-container-3 > div:nth-child(3) {
+  flex-basis: 200px;
+}
+
+/*     
+Display Grid nos permitira disponer elementos en 2 dimenciones a diferencia de flex que nos ayuda a disponer elementos solo en una dimencion .
+
+*/
+
+.container-grid {
+  display: grid;
+}
+
+.item {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.grid-columns {
+  grid-template-columns: 2fr 400px 1fr;
+
+  /* repeat(3,1fr); // (fr fr fr) repite cantidad   */
+}
+
+.grid-rows {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-rows-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.primero {
+  grid-column-start: 1; /* donde comienza */
+  grid-column-end: 3; /* donde finaliza*/
+  /*
+  grid-row-start: 1;
+  grid-row-end: 3; */
+}
+
+.estructura {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+
+  grid-template-areas:
+    "_header _header"
+    "_sidelbar _main"
+    "_footer _footer";
+
+  grid-template-rows: 80px 1fr 80px;
+
+  grid-template-columns: 300px 1fr;
+}
+
+._header {
+  grid-area: _header;
+  background-color: red;
+}
+
+._sidelbar {
+  grid-area: _sidelbar;
+  background-color: green;
+}
+
+._main {
+  grid-area: _main;
+  background-color: #007fff;
+}
+._footer {
+  grid-area: _footer;
+  background-color: aqua;
+}
+
+.responsivo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  grid-template-rows: repeat(1, minmax(100px, 200px));
+  border: 1px solid #007fff;
+  padding: 15px;
+  gap: 15px;
+}
+
+.responsivo > div {
+  background-color: blue;
+  color: #fff;
+  padding: 30px;
+  margin: 15px;
 }
