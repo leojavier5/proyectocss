@@ -513,3 +513,91 @@ Display Grid nos permitira disponer elementos en 2 dimenciones a diferencia de f
   padding: 30px;
   margin: 15px;
 }
+
+/* Intro JS */
+
+.introjs {
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  grid-template-areas:
+    "header_"
+    "main_" "footer_";
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header_ {
+  grid-area: header_;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+.header_ h1 {
+  grid-area: header_;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.main_ {
+  grid-area: main_;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ff0000;
+}
+
+.card {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 50px auto;
+
+  max-width: 300px;
+
+  padding: 20px;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card > input [type="number"],
+.card > input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 20px;
+  border: 1 px solid #ccc;
+  border-radius: 3px;
+}
+
+.card > button {
+  margin: 20px auto 0px;
+  width: 90%;
+  padding: 10px;
+  background-color: #007fff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.containerjs {
+  border-right: 1px solid #ddd;
+}
+
+.footer_ {
+  grid-area: footer_;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.footer_ p {
+  grid-area: footer_;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
