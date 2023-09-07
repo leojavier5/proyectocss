@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro JS</title>
+  </head>
+  <body class="introjs_">
+    <header class="header_"><h1>Intro.js</h1></header>
+
+    <main class="main_">
+      <section class="containerjs">
+        <h2>main</h2>
+        <article>
+          <div class="card">
+            <h2>Calculadora factorial</h2>
+            <label for=""></label>
+            <input type="number" id="factorial" />
+            <i id="respuesta1">respuesta</i>
+
+            <button onclick="CalcularFactorial()">Calcular factorial</button>
+          </div>
+        </article>
+
+        <article>
+          <div class="card">
+            <h2>verificar Palindromo</h2>
+            <label for="inputpalindromo">¿ es palindromo?</label>
+            <input type="text" id="inputpalindromo" />
+
+            <i id="respuesta2">respuesta</i>
+
+            <div>
+                <button onclick="verificarPalindromo()">verificar palíndromo</button>
+              
+            </div>
+        </article>
+      </section>
+
+      <aside>aside</aside>
+    </main>
+
+    <footer class="footer_"><p>footer</p></footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
